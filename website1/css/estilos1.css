@@ -1,0 +1,186 @@
+* /* aspectos generales de la web */ {
+	margin: 0;
+	padding: 0;
+	font-family: arial, helvetica, verdana;
+	box-sizing: border-box;
+}
+body {
+	background: #231E20;
+}
+
+.button1 {
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.button {
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+header nav {
+	position: fixed;
+	margin-bottom: 50px;
+	margin-top: 20px;
+	padding: 10px;
+	background: #59595B;
+	overflow: hidden;
+	border-radius: 5px;
+}
+
+header nav ul {
+	list-style: none;
+}
+
+header nav ul li {
+	float: left;
+}
+
+header nav ul li a {
+	margin: auto;
+	background: #F36522;
+	padding: 10px 20px;
+	display: block;
+	color: #fff;
+	text-decoration: none;
+}
+
+header nav ul li a:hover {
+	color: #000;
+}
+
+.lista:hover {
+	color: #ff8000;
+	list-style: none;
+
+}
+
+header, .contenido, footer {
+	width: 90%;
+	max-width: 90%;
+	margin: auto !important;
+	margin: 20px;
+}
+
+header div img {
+	width: 35%;
+}
+
+header section article h2, p {
+	margin: 10px;
+	padding: 15px;
+}
+
+.main .article {	
+	background: #414143;
+	width: 95% auto;
+	margin: 10px 90px;
+	float: left;
+	border-radius: 10px;
+}
+
+.article {
+	margin-top: 100px !important;
+}
+
+.main .article h2, p {
+	padding: 25px;
+}
+
+.imagen {
+	margin: 10px 20px; 
+	float: left;
+	height: 250px;
+}
+
+.contenidop {
+	background: #414143;
+	width: 60%;
+	float: left;
+	border-radius: 10px;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+.lightpink {
+	margin-top: 20px;
+	width: 80%;
+	height: 200px;
+	max-width: 97%;
+}
+
+aside h3 {
+	text-align: center;
+}
+
+aside {
+	margin: 10px 20px;
+	width: 35%;
+	margin: 10px 20p;
+	background: #6E6C72;
+	float: left;
+	border-radius: 10px;
+	padding: 20px 20px;
+	box-sizing: border-box;
+}
+
+aside article p {
+	padding: 0px 10px; 
+	width: 39%;
+	float: left;
+	text-align: justify;
+	padding: 10px 10px;
+}
+
+.manzana {
+	border-radius: 10px;
+	margin: 10px;
+	float: left;
+	width: 40%;
+}
+
+.contenido .contenidop article {
+	padding: 20px;
+	background: #414143;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	border-radius: 10px;
+}
+
+/* Cards */
+
+.carta {
+  	width: 15%;
+  	height: 215px;
+  	margin: 35px;
+  	float: left;
+  	border-radius: 10px;
+}
+
+.carta p {
+	padding: 0px;
+	margin: 0px;
+	width: 100%
+}
+
+.orange {
+	margin-bottom: 10px;
+	width: 100%;
+	border-radius: 10px;
+}
+
+footer {
+	margin: 20px 20px; 
+	background: #000;
+	color: #fff;
+	clear: both;
+	padding: 10px;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.footer {
+	text-align: center
+}
+
+
