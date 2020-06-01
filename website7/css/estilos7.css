@@ -3,6 +3,7 @@
   padding: 0px;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif, verdana;
+  color: #000;
 }
 
 body {
@@ -29,8 +30,7 @@ header nav {
   z-index: 9999;
 	position: fixed;
 	margin-bottom: 50px;
-	margin-top: -80px;
-  margin-left: 70px;
+	margin-top: 20px;
 	padding: 10px;
 	background: #59595B;
 	overflow: hidden;
@@ -55,7 +55,18 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-	color: #000;
+  color: #000;
+  text-decoration: none;
+}
+
+header{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.animate__animated .animate__flipInX{
+	animation-duration: 4s;
 }
 
 /* Mneú de navegación */
@@ -127,7 +138,6 @@ header nav ul li a:hover {
     display: block;
     text-align: left;
     width: 100%;
-    margin: 0;
     padding: 14px;
   }
   .menu input[type=text] {
@@ -136,12 +146,15 @@ header nav ul li a:hover {
 }
 
 /* Slide */
+.main {
+  margin-top: 20px !important;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
 
 .main .article {
   background: #414143;
-  width: 95%;
-  height: 500px;
-  margin: 20px 35px;
   float: left;
   border-radius: 10px;
 }
@@ -260,11 +273,9 @@ img {
 	font-size: 17px;
 	padding: 25px;
 	color: black;
-	background: #414143;
-  	width: 25%;
- 	height: 500px;
-  	margin: 20px 10px 20px 70px;
-  	float: left;
+  background: #414143;
+  margin: 20px;
+  float: left;
  	border-radius: 10px;
 }
 
@@ -281,11 +292,12 @@ img {
 	font-size: 17px;
 	color: black;
 	padding: 25px;
-	background: #414143;
-  	width: 35%;
- 	height: 390px;
-  	margin: 130px 70px 20px 0px;
-  	float: right;
+  background: #414143;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-left: 40px;
+  margin-bottom: 20px;
+  float: right;
  	border-radius: 10px;
  }
 

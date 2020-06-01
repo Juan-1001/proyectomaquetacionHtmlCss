@@ -6,6 +6,11 @@
 
 body {
 	background: #231E20;
+	color: #000;
+}
+
+footer{
+	color: white;
 }
 
 header, .main, footer {
@@ -35,10 +40,16 @@ header, .main, footer {
 	width: 50%;
 	height: 300px;
 }
+header{
+	z-index: 9999;
+	margin-top: 20px !important;
+	display: flex;
+	justify-content: center;
+	margin: auto;
+}
 
 header nav {
 	position: fixed;
-	margin-top: 0;
 	padding: 10px;
 	background: #59595B;
 	overflow: hidden;
@@ -64,15 +75,18 @@ header nav ul li a {
 
 header nav ul li a:hover {
 	color: #000;
+	text-decoration: none;
 }
 
 nav {
 	position: fixed;
 }
 
+.animate__animated .animate__flipInX{
+	animation-duration: 4s;
+}
+
 .main .article {
-	width: 68.5%;
-	margin-right: 1.5%;
 	float: left;
 	border-radius: 10px
 }
@@ -80,7 +94,6 @@ nav {
 .main .article article {
 	padding: 20px;
 	background: #414143;
-	margin-bottom: 20px;
 	margin-top: 10px;
 	border-radius: 10px;
 }
@@ -90,8 +103,8 @@ nav {
 }
 
 aside {
-	width: 30%;
 	margin-top: 10px;
+	margin-bottom: 20px;
 	background: #6E6C72;
 	float: left;
 	border-radius: 10px;
@@ -104,7 +117,8 @@ footer {
 	color: #fff;
 	clear: both;
 	padding: 10px;
-	border-radius: 10px
+	border-radius: 10px;
+	text-align: center;
 }
 
 .footer {

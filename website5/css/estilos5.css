@@ -2,6 +2,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  color: #000;
 }
 
 body {
@@ -19,12 +20,17 @@ body {
 	border-bottom-right-radius: 10px;
 }
 
+header{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
 
 header nav {
   z-index: 9999;
 	position: fixed;
-	margin-bottom: 50px;
-	margin-top: -80px;
+  margin-bottom: 50px;
+  margin-top: 20px;
 	margin-left: 50px;
 	padding: 10px;
 	background: #59595B;
@@ -50,7 +56,12 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-	color: #000;
+  color: #000;
+  text-decoration: none;
+}
+
+.animate__animated .animate__flipInX{
+	animation-duration: 4s;
 }
 
 .main, .article {
@@ -137,14 +148,12 @@ header nav ul li a:hover {
 
 .main .article {  
   background: #414143;
-  width: 35%;
   margin: 10px 20px;
   float: left;
   border-radius: 10px;
 }
 
 .vertical-menu {
-  width: 100%;
   margin: auto;
 }
 
@@ -169,14 +178,8 @@ section article div a {
   text-align: center;
 }
 
-.arriba {
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-}
-
-.abajo {
-	border-bottom-right-radius: 10px;
-	border-bottom-left-radius: 10px;
+.btn {
+	border-radius: 10px;
 }
 
 /* Slide */
@@ -191,21 +194,28 @@ section article div a {
 }
 
 .slide {
+  display: flex;
+  justify-content: center;
+  margin: auto;
 	background: #6C6E72;
-	width: 58%;
 	margin: 10px;
 	padding: 10px 20px;
 	float: left;
-	border-radius: 10px;
+  border-radius: 10px;
 }
 
 /* Cards */
 
 .carta {
+  display: flex;
+  justify-content: center;
+  margin: auto;
   background: #414149;
-  width: 18%;
-  height: 435px;
-  margin: 20px 12px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  
   float: left;
   border-radius: 10px;
 }
@@ -240,7 +250,7 @@ h2, p {
 footer {
   margin: 20px;
   background: #000;
-  color: #fff;
+  color: #fff !important;
   clear: both;
   padding: 10px;
   border-radius: 10px
@@ -248,5 +258,6 @@ footer {
 
 .footer {
   padding: 20px;
-  text-align: center
+  text-align: center;
+  color: white !important;
 }

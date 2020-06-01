@@ -7,6 +7,7 @@
 body {
   background: #231E20;
   font-family: Arial, Helvetica, sans-serif, verdana;
+  color: #000;
 }
 
 /* Menú de navegación */
@@ -26,14 +27,17 @@ header, .main, .article {
 	border-top-right-radius: 10px;
 	border-bottom-right-radius: 10px;
 }
-
+header{
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
 
 header nav {
-  z-index: 9999;
-	position: fixed;
-	margin-bottom: 50px;
-	margin-top: -80px !important;
-	padding: 10px;
+  position: fixed !important;
+  padding: 10px;
+  margin: 20px;
 	background: #59595B;
 	overflow: hidden;
 	border-radius: 5px;
@@ -57,7 +61,19 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-	color: #000;
+  color: #000;
+  text-decoration: none;
+}
+
+.nav{
+  position: fixed !important;
+}
+
+.animate__animated .animate__flipInX{
+  animation-duration: 4s;
+}
+#texto  {
+  animation-duration: 4s;
 }
 
 .menu {
@@ -136,7 +152,6 @@ header nav ul li a:hover {
 
 .main .article {  
   background: #414143;
-  width: 45%;
   margin: 20px 20px;
   float: left;
   border-radius: 10px;
@@ -153,17 +168,24 @@ header nav ul li a:hover {
 /* Audio */
 
 .audio {
-  float: left;
-  width: 25%;
+  float: right;
+  width: 50%;
   margin-top: 85px;
-  margin-left: 10px;
+  align-content: center;
+  display: flex;
+  margin: auto;
+  margin-bottom: 20px;
   border-radius: none;
 }
 
 .contsec {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
   background: #414143;
-  width: 95%;
-  margin: 10px 20px;
   float: left;
   border-radius: 10px;
 }
@@ -179,17 +201,20 @@ header nav ul li a:hover {
 .texto {
   font-size: 17px;
   background: #414143;
-  width: 55%;
-  margin: 10px 10px 10px 20px;
   float: left;
   border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .texto2 {
   text-align: justify;
   background: #414143;
-  width: 38.5%;
-  margin: 10px 10px;
+  margin: 20px 10px;
   float: left;
   border-radius: 10px;
 }
@@ -197,7 +222,7 @@ header nav ul li a:hover {
 .pink {
   border-radius: 10px;
   width: 20%;
-  margin: 0px 30px 5px 0px;
+  margin: 0px 30px 15px 0px;
 }
 
 p, h2 {
@@ -212,7 +237,6 @@ footer {
   background: #000;
   color: #fff;
   clear: both;
-  padding: 10px;
   border-radius: 10px
 }
 

@@ -2,6 +2,7 @@
 margin: 0px;
 padding: 0px;
 font-family: arial, sans-serif, helvetica, verdana;
+color: #000;
 }
 
 body {
@@ -18,17 +19,21 @@ body {
 	border-bottom-right-radius: 10px;
 }
 
-
 header nav   {
 	z-index: 9999;
 	position: fixed;
-	margin-bottom: 50px;
 	margin-top: 20px;
-	margin-left: 50px;
 	padding: 10px;
 	background: #59595B;
 	overflow: hidden;
 	border-radius: 5px;
+}
+
+header{
+	z-index: 9999;
+	display: flex;
+	justify-content: center;
+	margin: auto;
 }
 
 header nav  ul {
@@ -50,6 +55,17 @@ header nav ul li a {
 
 header nav ul li a:hover {
 	color: #000;
+	text-decoration: none;
+}
+
+.animate__animated .animate__flipInX{
+	animation-duration: 4s;
+}
+
+.main{
+	display: flex;
+	justify-content: center;
+	margin: auto;
 }
 
 .main, .article, footer {
@@ -61,14 +77,13 @@ header nav ul li a:hover {
 }
 
 .parkour {
-	width: 40%;
-	margin: 20px;
+	margin-top: -80px;
 	border-radius: 10px;
 	float: left;
 }
 
 .texto {
-	width: 50%;
+	margin-top: -50px;
 	float: left;
 }
 
@@ -81,36 +96,37 @@ h2, p {
 
 .carta {
 	background: #414149;
-  	width: 18%;
-  	height: 455px;
-  	margin: 20px 20px;
+	margin-left: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
   	float: left;
   	border-radius: 10px;
 }
 
 .conejo {
-	margin: 10px 10px 0px 10px;
-	width: 90%;
+	margin-top: 15px;
+	width: 100px;
 	border-radius: 10px;
 }
 
 aside {
-	width: 33.5%;
-	margin-top: 20px;
+	align-content: center;
+	display: flex;
+	margin: auto;
+	margin: 10px;
+	margin-left: 20px !important;
 	background: #6E6C72;
-	float: left;
 	border-radius: 10px;
-	padding: 20px;
 	box-sizing: border-box;
 }
 
-aside h3, h2, p {
+aside h2, p {
 	text-align: justify;
 }
 
 footer {
 	background: #000;
-	color: #fff;
+	color: #fff !important;
 	clear: both;
 	padding: 10px;
 	border-radius: 10px

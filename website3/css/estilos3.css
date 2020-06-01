@@ -1,7 +1,8 @@
 * /* aspectos generales de la web */{
 margin: 0px;
- padding: 0px;
- font-family: arial, sans-serif, helvetica, verdana;
+padding: 0px;
+font-family: arial, sans-serif, helvetica, verdana;
+color: #000;
 }
 
 body {
@@ -50,8 +51,12 @@ header nav ul li a {
 
 header nav ul li a:hover {
 	color: #000;
+	text-decoration: none;
 }
 
+.animate__animated .animate__flipInX{
+	--animate-duration: 4s;
+}
 
 .main .article {
 	background: #414143;
@@ -76,8 +81,20 @@ header nav ul li a:hover {
 }
 
 .texto {
+	display: flex;
+	justify-content: center;
+	margin: auto;
 	background: #414143;
-  	width: 46%;
+  	margin: 100px 20px;
+  	float: left;
+  	border-radius: 10px;
+}
+
+.texto2 {
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	background: #414143;
   	margin: 100px 20px;
   	float: left;
   	border-radius: 10px;

@@ -4,26 +4,30 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>My website with HTML and CSS</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="css/estilos2.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
 </head>
 
 <body>
-	<header>
+	<div class="row">
+	<header class="col-lx-12 col-lg-12 col-md-6 col-sm-12 col-xs-12 animate__animated animate__backInDown">
 		<nav>
 			<ul>
-				<li><a class="button1" href="../index.html">Home</a></li>
-				<li><a href="../website1/index.html">Website #1</a></li>
-				<li><a href="index.html">Website #2</a></li>
-				<li><a href="../website3/index.html">Website #3</a></li>
-				<li><a href="../website4/index.html">Website #4</a></li>
-				<li><a href="../website5/index.html">Website #5</a></li>
-				<li><a href="../website6/index.html">Website #6</a></li>
-				<li><a href="../website7/index.html">Website #7</a></li>
-				<li><a class="button" href="../website8/index.html">Website #8</a></li>
+				<li><a class="button1 animate__animated animate__flipInX" href="../index.html">Home</a></li>
+				<li><a class=" animate__animated animate__flipInX" href="../website1/index.html">Website #1</a></li>
+				<li><a class=" animate__animated animate__flipInX" href="index.html">Website #2</a></li>
+				<li><a class=" animate__animated animate__flipInX" href="../website3/index.html">Website #3</a></li>
+				<li><a class=" animate__animated animate__flipInX" href="../website4/index.html">Website #4</a></li>
+				<li><a class=" animate__animated animate__flipInX" href="../website5/index.html">Website #5</a></li>
+				<li><a class=" animate__animated animate__flipInX" href="../website6/index.html">Website #6</a></li>
+				<li><a class=" animate__animated animate__flipInX" href="../website7/index.html">Website #7</a></li>
+				<li><a class="button animate__animated animate__flipInX" href="../website8/index.html">Website #8</a></li>
 			</ul> 
 		</nav>
 	</header>
+	</div>
 	
 	<!-- Menú de navegación -->
 	
@@ -41,8 +45,8 @@
 
 	<!-- Contenido Principal -->
 
-	<section class="main">
-		<section class="article">
+	<section class="main row animate__bounceInRight" id="texto">
+		<section class="article col-lx-5 col-lg-6 col-md-12 col-sm-12 col-xs-12">
 			<article>
 				<div>
 					<img src="images/red.png" class="red">
@@ -54,17 +58,15 @@
 					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 					cillum dolore eu fugiat nulla pariatur.</p>
 			</article>
+			<section class="row">
+				<audio class="audio" controls>
+					<source src="audio/audio.ogg" type="audio/ogg">
+					<source src="audio/audio.mp3" type="audio/mpeg">
+					<source src="audio/audio.wav" type="audio/wav">
+				</audio>
+			</section>
 		</section>
 	</section>
-
-	<!-- Audio -->
-		<section>
-			<audio class="audio" controls>
-				<source src="audio/audio.ogg" type="audio/ogg">
-				<source src="audio/audio.mp3" type="audio/mpeg">
-				<source src="audio/audio.wav" type="audio/wav">
-			</audio>
-		</section>
 
 	<!-- Contenido Secundario -->
 
@@ -80,7 +82,7 @@
 
 	<!-- Texto -->
 
-	<section class="texto">
+	<section class="texto row col-lx-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
 		<article>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -98,7 +100,7 @@
 		</article>
 	</section>
 
-	<section class="texto2">
+	<section class="texto2 row col-lx-5 col-lg-5 col-md-12 col-sm-12 col-xs-12">
 		<article>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,

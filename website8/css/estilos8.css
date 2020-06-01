@@ -3,10 +3,15 @@
   padding: 0px;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif, verdana;
+  color: #000;
 }
 
 body {
 	background: #231E20;
+}
+
+.footer{
+	color: white;
 }
 
 .main, .article, .footer {
@@ -25,12 +30,17 @@ body {
 	border-bottom-right-radius: 10px;
 }
 
+header{
+	display: flex;
+	justify-content: center;
+	margin: auto;
+}
+
 header nav {
 	z-index: 9999;
 	position: fixed;
 	margin-bottom: 50px;
 	margin-top: 20px;
-  margin-left: 70px;
 	padding: 10px;
 	background: #59595B;
 	overflow: hidden;
@@ -56,7 +66,15 @@ header nav ul li a {
 
 header nav ul li a:hover {
 	color: #000;
+	text-decoration: none;
 }
+
+.animate__animated .animate__flipInX{
+	animation-duration: 4s;
+}
+
+
+/* contebido */
 
 .main {
 	background: #414149;
